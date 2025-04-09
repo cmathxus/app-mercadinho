@@ -1,0 +1,26 @@
+@page
+@model CadastroModel
+@{
+    ViewData["Title"] = "Cadastro de Produtos";
+}
+
+<h1>Cadastro de Produtos</h1>
+
+<form method="post">
+    <label>Nome do Produto:</label><br>
+    <input type="text" asp-for="Produto.Nome" /><br><br>
+
+    <label>Preço:</label><br>
+    <input type="number" asp-for="Produto.Preco" step="0.01" /><br><br>
+
+    <label>Quantidade:</label><br>
+    <input type="number" asp-for="Produto.Quantidade" step="0.01" /><br><br>
+
+    <button type="submit">Cadastrar</button>
+</form>
+
+@if (Model.Mensagem != null)
+{
+    <br>
+    <p><strong>@Model.Mensagem</strong></p>
+}
