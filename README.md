@@ -1,5 +1,5 @@
 
-# 🛒 Mercadinho do Caio
+# 🛒 Mercadinho
 
 Sistema simples de controle de estoque feito em **ASP.NET Core Razor Pages** com banco de dados **SQLite**.  
 Criado para ajudar no gerenciamento de produtos de um mercadinho real (doces, bebidas, etc).
