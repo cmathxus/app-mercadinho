@@ -6,18 +6,58 @@
 
 <h1>Cadastro de Produtos</h1>
 
-<form method="post">
+ <form method="post" class="formulario-cadastro">
     <label>Nome do Produto:</label><br>
-    <input type="text" asp-for="Produto.Nome" /><br><br>
+
+    <select asp-for="Produto.Nome" id="produtoSelect" onchange="toggleNovoProdutoInput()">
+        <option value="">-- Selecione um Produto --</option>
+        @foreach (var nome in Model.ProdutosCadastrados)
+        {
+            <b><option value="@nome">@nome</option> </b>
+        }
+        <option value="__novo"> <bold> Cadastrar novo produto </bold> </option>
+    </select><br><br>
+
+    <div id="novoProdutoDiv" style="display:none;">
+        <label>Nome do novo produto:</label><br>
+        <input type="text" id="novoProdutoInput" name="Produto.Nome" /><br><br>
+    </div>
 
     <label>Preço:</label><br>
     <input type="number" asp-for="Produto.Preco" step="0.01" /><br><br>
 
     <label>Quantidade:</label><br>
-    <input type="number" asp-for="Produto.Quantidade" step="0.01" /><br><br>
+    <input type="number" asp-for="Produto.Quantidade" step="1" /><br><br>
 
     <button type="submit">Cadastrar</button>
 </form>
+
+<script>
+    function toggleNovoProdutoInput() {
+        const select = document.getElementById("produtoSelect");
+        const novoDiv = document.getElementById("novoProdutoDiv");
+        const novoInput = document.getElementById("novoProdutoInput");
+
+        if (select.value === "__novo") {
+            novoDiv.style.display = "block";
+            novoInput.required = true;
+            novoInput.focus();
+        } else {
+            novoDiv.style.display = "none";
+            novoInput.required = false;
+        }
+    }
+
+    // Antes de enviar o form, se for novo produto, coloca ele no select
+    document.querySelector('form').addEventListener('submit', function (e) {
+        const select = document.getElementById("produtoSelect");
+        const novoInput = document.getElementById("novoProdutoInput");
+
+        if (select.value === "__novo" && novoInput.value.trim() !== "") {
+            select.value = novoInput.value.trim(); // Substitui "__novo" pelo nome real
+        }
+    });
+</script>
 
 @if (Model.Mensagem != null)
 {
