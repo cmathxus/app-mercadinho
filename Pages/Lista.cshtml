@@ -6,24 +6,38 @@
 
 <h1>Estoque</h1>
 
-<table border="1" cellpadding="5" cellspacing="0">
-    <thead>
-        <tr>
-            <th>Nome</th>
-            <th>Preço</th>
-            <th>Quantidade</th>
-            <th>Valor total <br> em estoque</em></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var produto in Model.Produtos)
-        {
+@if (Model.Produtos == null || !Model.Produtos.Any())
+{
+    <p class="msg-produtos"><strong>Sem produtos no estoque</strong></p>
+}
+else
+{
+    <table border="1" cellpadding="5" cellspacing="0" class="tabela-produtos">
+        <thead>
             <tr>
-                <td>@produto.Nome</td>
-                <td>R$ @produto.Preco.ToString("F2")</td>
-                <td>@produto.Quantidade</td>
-                <td>R$ @produto.valorTotalEstoque().ToString("F2")</td>
+                <th>Nome</th>
+                <th>Preço</th>
+                <th>Quantidade</th>
+                <th>Valor total em estoque</th>
+                <th>Ações</th>
             </tr>
-        }
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            @foreach (var produto in Model.Produtos)
+            {
+                <tr>
+                    <td>@produto.Nome</td>
+                    <td>R$ @produto.Preco.ToString("F2")</td>
+                    <td>@produto.Quantidade</td>
+                    <td>R$ @produto.valorTotalEstoque().ToString("F2")</td>
+                    <td>
+                        <a asp-page="/Editar" asp-route-id="@produto.Id" class="btn-editar">✏️ Editar</a>
+                        <form method="post" asp-page-handler="Excluir" asp-route-id="@produto.Id" style="display: inline;">
+                            <button type="submit" class="btn-excluir" onclick="return confirm('Tem certeza que deseja excluir esse produto?')">🗑️ Excluir</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

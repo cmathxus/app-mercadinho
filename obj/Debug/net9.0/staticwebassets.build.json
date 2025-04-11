@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "eCGRl4JFaMPtLy4taJ4Aug65Yltad49jO7o6sPRK568=",
+  "Hash": "hqiG0z5EBworAfw03lpQ8gLGaJtp08ZWinPkC+N4C/U=",
   "Source": "Mercadinho",
   "BasePath": "_content/Mercadinho",
   "Mode": "Default",
@@ -1025,12 +1025,12 @@
       "OriginalItemSpec": "C:\\Users\\akirasz\\projects\\mercadinho\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\akirasz\\projects\\mercadinho\\obj\\Debug\\net9.0\\compressed\\w8nntxuj5c-2nk4zrcjtn.gz",
+      "Identity": "C:\\Users\\akirasz\\projects\\mercadinho\\obj\\Debug\\net9.0\\compressed\\w8nntxuj5c-ldejsfrgum.gz",
       "SourceId": "Mercadinho",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\akirasz\\projects\\mercadinho\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/Mercadinho",
-      "RelativePath": "css/site#[.{fingerprint=2nk4zrcjtn}]?.css.gz",
+      "RelativePath": "css/site#[.{fingerprint=ldejsfrgum}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -1039,8 +1039,8 @@
       "RelatedAsset": "C:\\Users\\akirasz\\projects\\mercadinho\\wwwroot\\css\\site.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "ffadvvk3uo",
-      "Integrity": "9S68qfaKmtmtaFJZSyHHV8Ih+OPeonn6a8KsAqj8BtI=",
+      "Fingerprint": "7zq73ifhvt",
+      "Integrity": "Ux9Zp4hugJNPZ69apZjpcxm2Bty7WX7L+dKH/+l6cBs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\akirasz\\projects\\mercadinho\\wwwroot\\css\\site.css"
@@ -1417,8 +1417,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "2nk4zrcjtn",
-      "Integrity": "gu9f+mb6TMCitwDepN/2wkJ1o+GMCjH9pA4FKs55jGQ=",
+      "Fingerprint": "ldejsfrgum",
+      "Integrity": "ibe75gQQdzp3MYyH3+M4YHVEmXOxpwZ672Ot5ggvRyc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -2728,13 +2728,13 @@
   ],
   "Endpoints": [
     {
-      "Route": "css/site.2nk4zrcjtn.css",
-      "AssetFile": "C:\\Users\\akirasz\\projects\\mercadinho\\obj\\Debug\\net9.0\\compressed\\w8nntxuj5c-2nk4zrcjtn.gz",
+      "Route": "css/site.css",
+      "AssetFile": "C:\\Users\\akirasz\\projects\\mercadinho\\obj\\Debug\\net9.0\\compressed\\w8nntxuj5c-ldejsfrgum.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.002032520325"
+          "Quality": "0.001383125864"
         }
       ],
       "ResponseHeaders": [
@@ -2744,19 +2744,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "491"
+          "Value": "722"
         },
         {
           "Name": "ETag",
-          "Value": "\"9S68qfaKmtmtaFJZSyHHV8Ih+OPeonn6a8KsAqj8BtI=\""
+          "Value": "\"Ux9Zp4hugJNPZ69apZjpcxm2Bty7WX7L+dKH/+l6cBs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 03:52:29 GMT"
+          "Value": "Fri, 11 Apr 2025 12:49:42 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -2772,26 +2772,18 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"gu9f+mb6TMCitwDepN/2wkJ1o+GMCjH9pA4FKs55jGQ=\""
+          "Value": "W/\"ibe75gQQdzp3MYyH3+M4YHVEmXOxpwZ672Ot5ggvRyc=\""
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "2nk4zrcjtn"
-        },
-        {
-          "Name": "label",
-          "Value": "css/site.css"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-gu9f+mb6TMCitwDepN/2wkJ1o+GMCjH9pA4FKs55jGQ="
+          "Value": "sha256-ibe75gQQdzp3MYyH3+M4YHVEmXOxpwZ672Ot5ggvRyc="
         }
       ]
     },
     {
-      "Route": "css/site.2nk4zrcjtn.css",
+      "Route": "css/site.css",
       "AssetFile": "C:\\Users\\akirasz\\projects\\mercadinho\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2801,7 +2793,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1182"
+          "Value": "2012"
         },
         {
           "Name": "Content-Type",
@@ -2809,11 +2801,156 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"gu9f+mb6TMCitwDepN/2wkJ1o+GMCjH9pA4FKs55jGQ=\""
+          "Value": "\"ibe75gQQdzp3MYyH3+M4YHVEmXOxpwZ672Ot5ggvRyc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 03:52:29 GMT"
+          "Value": "Fri, 11 Apr 2025 12:49:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ibe75gQQdzp3MYyH3+M4YHVEmXOxpwZ672Ot5ggvRyc="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css.gz",
+      "AssetFile": "C:\\Users\\akirasz\\projects\\mercadinho\\obj\\Debug\\net9.0\\compressed\\w8nntxuj5c-ldejsfrgum.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "722"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ux9Zp4hugJNPZ69apZjpcxm2Bty7WX7L+dKH/+l6cBs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 11 Apr 2025 12:49:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ux9Zp4hugJNPZ69apZjpcxm2Bty7WX7L+dKH/+l6cBs="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.ldejsfrgum.css",
+      "AssetFile": "C:\\Users\\akirasz\\projects\\mercadinho\\obj\\Debug\\net9.0\\compressed\\w8nntxuj5c-ldejsfrgum.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001383125864"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "722"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ux9Zp4hugJNPZ69apZjpcxm2Bty7WX7L+dKH/+l6cBs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 11 Apr 2025 12:49:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"ibe75gQQdzp3MYyH3+M4YHVEmXOxpwZ672Ot5ggvRyc=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ldejsfrgum"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ibe75gQQdzp3MYyH3+M4YHVEmXOxpwZ672Ot5ggvRyc="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.ldejsfrgum.css",
+      "AssetFile": "C:\\Users\\akirasz\\projects\\mercadinho\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2012"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ibe75gQQdzp3MYyH3+M4YHVEmXOxpwZ672Ot5ggvRyc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 11 Apr 2025 12:49:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2823,7 +2960,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "2nk4zrcjtn"
+          "Value": "ldejsfrgum"
         },
         {
           "Name": "label",
@@ -2831,13 +2968,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-gu9f+mb6TMCitwDepN/2wkJ1o+GMCjH9pA4FKs55jGQ="
+          "Value": "sha256-ibe75gQQdzp3MYyH3+M4YHVEmXOxpwZ672Ot5ggvRyc="
         }
       ]
     },
     {
-      "Route": "css/site.2nk4zrcjtn.css.gz",
-      "AssetFile": "C:\\Users\\akirasz\\projects\\mercadinho\\obj\\Debug\\net9.0\\compressed\\w8nntxuj5c-2nk4zrcjtn.gz",
+      "Route": "css/site.ldejsfrgum.css.gz",
+      "AssetFile": "C:\\Users\\akirasz\\projects\\mercadinho\\obj\\Debug\\net9.0\\compressed\\w8nntxuj5c-ldejsfrgum.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2846,7 +2983,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "491"
+          "Value": "722"
         },
         {
           "Name": "Content-Type",
@@ -2854,11 +2991,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"9S68qfaKmtmtaFJZSyHHV8Ih+OPeonn6a8KsAqj8BtI=\""
+          "Value": "\"Ux9Zp4hugJNPZ69apZjpcxm2Bty7WX7L+dKH/+l6cBs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 03:52:29 GMT"
+          "Value": "Fri, 11 Apr 2025 12:49:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2876,7 +3013,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "2nk4zrcjtn"
+          "Value": "ldejsfrgum"
         },
         {
           "Name": "label",
@@ -2884,144 +3021,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-9S68qfaKmtmtaFJZSyHHV8Ih+OPeonn6a8KsAqj8BtI="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.css",
-      "AssetFile": "C:\\Users\\akirasz\\projects\\mercadinho\\obj\\Debug\\net9.0\\compressed\\w8nntxuj5c-2nk4zrcjtn.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.002032520325"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "491"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"9S68qfaKmtmtaFJZSyHHV8Ih+OPeonn6a8KsAqj8BtI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 03:52:29 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"gu9f+mb6TMCitwDepN/2wkJ1o+GMCjH9pA4FKs55jGQ=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-gu9f+mb6TMCitwDepN/2wkJ1o+GMCjH9pA4FKs55jGQ="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.css",
-      "AssetFile": "C:\\Users\\akirasz\\projects\\mercadinho\\wwwroot\\css\\site.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1182"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"gu9f+mb6TMCitwDepN/2wkJ1o+GMCjH9pA4FKs55jGQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 03:52:29 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-gu9f+mb6TMCitwDepN/2wkJ1o+GMCjH9pA4FKs55jGQ="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.css.gz",
-      "AssetFile": "C:\\Users\\akirasz\\projects\\mercadinho\\obj\\Debug\\net9.0\\compressed\\w8nntxuj5c-2nk4zrcjtn.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "491"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"9S68qfaKmtmtaFJZSyHHV8Ih+OPeonn6a8KsAqj8BtI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 10 Apr 2025 03:52:29 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-9S68qfaKmtmtaFJZSyHHV8Ih+OPeonn6a8KsAqj8BtI="
+          "Value": "sha256-Ux9Zp4hugJNPZ69apZjpcxm2Bty7WX7L+dKH/+l6cBs="
         }
       ]
     },

@@ -91,3 +91,20 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: #45a049;
 }
+
+.tabela-produtos {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid #ddd;
+}
+
+.msg-produtos {
+  text-align: center;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+}

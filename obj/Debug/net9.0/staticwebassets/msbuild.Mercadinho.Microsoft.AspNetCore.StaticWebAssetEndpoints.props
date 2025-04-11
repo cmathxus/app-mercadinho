@@ -1,16 +1,16 @@
 ﻿<Project>
   <ItemGroup>
-    <StaticWebAssetEndpoint Include="_content/Mercadinho/css/site.2nk4zrcjtn.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"2nk4zrcjtn"},{"Name":"integrity","Value":"sha256-gu9f\u002Bmb6TMCitwDepN/2wkJ1o\u002BGMCjH9pA4FKs55jGQ="},{"Name":"label","Value":"_content/Mercadinho/css/site.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1182"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022gu9f\u002Bmb6TMCitwDepN/2wkJ1o\u002BGMCjH9pA4FKs55jGQ=\u0022"},{"Name":"Last-Modified","Value":"Thu, 10 Apr 2025 03:52:29 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Mercadinho/css/site.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-gu9f\u002Bmb6TMCitwDepN/2wkJ1o\u002BGMCjH9pA4FKs55jGQ="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1182"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022gu9f\u002Bmb6TMCitwDepN/2wkJ1o\u002BGMCjH9pA4FKs55jGQ=\u0022"},{"Name":"Last-Modified","Value":"Thu, 10 Apr 2025 03:52:29 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-ibe75gQQdzp3MYyH3\u002BM4YHVEmXOxpwZ672Ot5ggvRyc="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2012"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022ibe75gQQdzp3MYyH3\u002BM4YHVEmXOxpwZ672Ot5ggvRyc=\u0022"},{"Name":"Last-Modified","Value":"Fri, 11 Apr 2025 12:49:42 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Mercadinho/css/site.ldejsfrgum.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ldejsfrgum"},{"Name":"integrity","Value":"sha256-ibe75gQQdzp3MYyH3\u002BM4YHVEmXOxpwZ672Ot5ggvRyc="},{"Name":"label","Value":"_content/Mercadinho/css/site.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2012"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022ibe75gQQdzp3MYyH3\u002BM4YHVEmXOxpwZ672Ot5ggvRyc=\u0022"},{"Name":"Last-Modified","Value":"Fri, 11 Apr 2025 12:49:42 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Mercadinho/favicon.61n19gt1b8.ico">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</AssetFile>
