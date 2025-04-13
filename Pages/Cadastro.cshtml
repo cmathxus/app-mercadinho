@@ -48,13 +48,12 @@
         }
     }
 
-    // Antes de enviar o form, se for novo produto, coloca ele no select
     document.querySelector('form').addEventListener('submit', function (e) {
         const select = document.getElementById("produtoSelect");
         const novoInput = document.getElementById("novoProdutoInput");
 
         if (select.value === "__novo" && novoInput.value.trim() !== "") {
-            select.value = novoInput.value.trim(); // Substitui "__novo" pelo nome real
+            select.value = novoInput.value.trim(); 
         }
     });
 </script>
