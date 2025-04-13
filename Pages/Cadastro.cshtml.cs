@@ -9,13 +9,13 @@ public class CadastroModel : PageModel
     [BindProperty]
 
     public Produto Produto { get; set; } = new Produto(); // objeto que vai receber os dados do form
+
+    [TempData]
     public string Mensagem { get; set; }
-    public void OnPost()
+    public IActionResult OnPost()
     {
         Produto.Nome = CultureInfo.CurrentCulture.TextInfo.ToTitleCase(Produto.Nome.ToLower());
 
-        // amanha tentar colocar o campo de "nome do produto" como uma lista de produtos já cadastrados no sistema, e o usuario vai ter a opçao de adicionar um novo produto na lista, 
-        // assim posso evitar o caso de produtos duplicados no banco
         using (var db = new AppDbContext())
         {
             var produtoExistente = db.Produtos.FirstOrDefault(p => p.Nome == Produto.Nome);
@@ -25,6 +25,7 @@ public class CadastroModel : PageModel
                 produtoExistente.Quantidade += Produto.Quantidade;
 
                 Mensagem = $"Produto {Produto.Nome} já existente. Quantidade atualizada";
+                System.Console.WriteLine( $"Produto {Produto.Nome} já existente");
             }
             else
             {
@@ -32,11 +33,14 @@ public class CadastroModel : PageModel
 
                 Mensagem = $"Produto {Produto.Nome} cadastrado com sucesso";
 
-                System.Console.WriteLine("Produto cadastrado!");
+                System.Console.WriteLine( $"Produto {Produto.Nome} cadastrado com sucesso!");
+                
             }
 
             db.SaveChanges();
         }
+
+        return RedirectToPage("Cadastro");
     }
 
     public List<string> ProdutosCadastrados { get; set; } = new List<string>();
