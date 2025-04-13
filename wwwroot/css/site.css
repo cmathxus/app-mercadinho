@@ -108,3 +108,30 @@ button[type="submit"]:hover {
   border: 1px solid #ddd;
   border-radius: 12px;
 }
+
+.lista-estoque {
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid #ddd;
+}
+
+.lista-estoque td {
+  border-radius: 12px;
+  border: 1px solid #ddd;
+}
+
+.lista-estoque a {
+  border-radius: 12px;
+  font-size: 16px;
+  display: block;
+  font-weight: 600;
+  color: black;
+  text-align: center;
+  background-color: #ddd;
+  text-decoration: none;
+  padding:10px;
+}
+
+.lista-estoque a:hover {
+  background-color: #bdbdbd;
+}
