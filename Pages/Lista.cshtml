@@ -31,7 +31,7 @@ else
                     <td>@produto.Quantidade</td>
                     <td>R$ @produto.valorTotalEstoque().ToString("F2")</td>
                     <td>
-                        <a asp-page="/Editar" asp-route-id="@produto.Id" class="btn-editar">Editar</a>
+                        <a asp-page="/EditarLista" asp-route-id="@produto.Id" class="btn-editar">Editar</a>
                         <form method="post" asp-page-handler="Excluir" asp-route-id="@produto.Id" style="display: inline;">
                             <button type="submit" class="btn-excluir" onclick="return confirm('Tem certeza que deseja excluir esse produto?')">Excluir</button>
                         </form>
