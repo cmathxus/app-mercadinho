@@ -31,7 +31,7 @@ Criado para ajudar no gerenciamento de produtos de um mercadinho real (doces, be
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/teu-user/mercadinho.git
+git clone https://github.com/cmathxus/app-mercadinho.git
 ```
 
 2. Acesse a pasta:
