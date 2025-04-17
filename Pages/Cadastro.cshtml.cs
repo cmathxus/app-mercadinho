@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore.Query.Internal;
 
-public class CadastroModel : PageModel
+public class CadastroModel : PageModel // Fazer historico de baixas e inclusões no sistema, fazer um carrinho e uma lista para filtrar o produto pelo ID no banco de dados
 {
     [BindProperty]
 
