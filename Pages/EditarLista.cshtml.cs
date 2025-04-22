@@ -71,8 +71,8 @@ public class EditarListaModel : PageModel
                 await db.SaveChangesAsync();
 
                 Console.WriteLine($"Log: {log.NomeProduto} - {log.TipoOperacao} - {log.Quantidade} - {log.DataOperacao}");
-                return RedirectToPage("/Lista");
             }
         }
+        return RedirectToPage("/Lista");
     }
 }
