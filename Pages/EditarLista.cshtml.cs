@@ -32,21 +32,21 @@ public class EditarListaModel : PageModel
 
             if (produtoNoBanco != null)
             {
+                var quantidadeAnterior = produtoNoBanco.Quantidade;
+
                 produtoNoBanco.Nome = Produto.Nome;
                 produtoNoBanco.Preco = Produto.Preco;
                 produtoNoBanco.Quantidade = Produto.Quantidade;
 
                 await db.SaveChangesAsync();
-                var quantidadeAnterior = produtoNoBanco.Quantidade;
-                produtoNoBanco.Quantidade = Produto.Quantidade;
 
                 string tipoOperacao;
 
-                if (Produto.Quantidade > 0)
+                if (Produto.Quantidade > quantidadeAnterior)
                 {
-                    tipoOperacao = produtoNoBanco != null ? "Inclusão" : "Cadastro";
+                    tipoOperacao = "Inclusão";
                 }
-                else if (Produto.Quantidade < 0)
+                else if (Produto.Quantidade < quantidadeAnterior)
                 {
                     tipoOperacao = "Baixa";
                 }
@@ -63,17 +63,16 @@ public class EditarListaModel : PageModel
                 {
                     NomeProduto = Produto.Nome,
                     TipoOperacao = tipoOperacao,
-                    Quantidade = Produto.Quantidade,
+                    Quantidade = Math.Abs(Produto.Quantidade - quantidadeAnterior),
                     DataOperacao = DateTime.Now
                 };
 
                 db.Logs.Add(log);
-                db.SaveChanges();
+                await db.SaveChangesAsync();
 
                 Console.WriteLine($"Log: {log.NomeProduto} - {log.TipoOperacao} - {log.Quantidade} - {log.DataOperacao}");
-
+                return RedirectToPage("/Lista");
             }
         }
-        return RedirectToPage("/Lista");
     }
 }
