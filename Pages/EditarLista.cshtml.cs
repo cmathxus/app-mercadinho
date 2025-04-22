@@ -37,15 +37,41 @@ public class EditarListaModel : PageModel
                 produtoNoBanco.Quantidade = Produto.Quantidade;
 
                 await db.SaveChangesAsync();
+                var quantidadeAnterior = produtoNoBanco.Quantidade;
+                produtoNoBanco.Quantidade = Produto.Quantidade;
+
+                string tipoOperacao;
+
+                if (Produto.Quantidade > 0)
+                {
+                    tipoOperacao = produtoNoBanco != null ? "Inclusão" : "Cadastro";
+                }
+                else if (Produto.Quantidade < 0)
+                {
+                    tipoOperacao = "Baixa";
+                }
+                else
+                {
+                    tipoOperacao = "Sem alteração";
+                }
+
+                Console.WriteLine("Produto recebido:");
+                Console.WriteLine($"Nome: {Produto?.Nome}");
+                Console.WriteLine($"Quantidade: {Produto?.Quantidade}");
 
                 var log = new Log
                 {
                     NomeProduto = Produto.Nome,
-                    TipoOperacao = "Atualização",
+                    TipoOperacao = tipoOperacao,
                     Quantidade = Produto.Quantidade,
                     DataOperacao = DateTime.Now
                 };
+
                 db.Logs.Add(log);
+                db.SaveChanges();
+
+                Console.WriteLine($"Log: {log.NomeProduto} - {log.TipoOperacao} - {log.Quantidade} - {log.DataOperacao}");
+
             }
         }
         return RedirectToPage("/Lista");
