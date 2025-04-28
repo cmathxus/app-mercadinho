@@ -23,20 +23,19 @@ public class EditarListaModel : PageModel
     }
 
 
-
     public async Task<IActionResult> OnPostAsync()
     {
         using (var db = new AppDbContext())
         {
-            var produtoNoBanco = await db.Produtos.FindAsync(Produto.Id);
+            var produtoExistente = await db.Produtos.FindAsync(Produto.Id);
 
-            if (produtoNoBanco != null)
+            if (produtoExistente != null)
             {
-                var quantidadeAnterior = produtoNoBanco.Quantidade;
+                var quantidadeAnterior = produtoExistente.Quantidade;
 
-                produtoNoBanco.Nome = Produto.Nome;
-                produtoNoBanco.Preco = Produto.Preco;
-                produtoNoBanco.Quantidade = Produto.Quantidade;
+                produtoExistente.Nome = Produto.Nome;
+                produtoExistente.Preco = Produto.Preco;
+                produtoExistente.Quantidade = Produto.Quantidade;
 
                 await db.SaveChangesAsync();
 
